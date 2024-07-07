@@ -6,14 +6,16 @@ import styles from '../Navbar/Navbar.module.scss';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const EnhancedNavbar = (props) => {
-  const [activeDropdown, setActiveDropdown] = useState('forEmployers');
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  // const [activeDropdown, setActiveDropdown] = useState('forYou');
 
   const handleMouseEnter = (menu) => {
     setActiveDropdown(menu);
   };
 
   const handleMouseLeave = () => {
-    setActiveDropdown('forEmployers');
+    setActiveDropdown(null);
+    // setActiveDropdown('forYou');
   };
 
   return (
@@ -64,31 +66,6 @@ const EnhancedNavbar = (props) => {
             onMouseLeave={handleMouseLeave}
           >
             <a href="#for-employers">For Employers</a>
-            {activeDropdown === 'forEmployers' && (
-              <div className={styles.dropdown}>
-                <div className={styles.dropdownContent}>
-                  <div className={styles.dropdownItem}>
-                    <div className={styles.dropdownItemText}>
-                      <span className={styles.benefitTitle}>Your prescription for savings!</span>
-                      <p className={styles.benefitText}>Partner with Canada online pharmacy to reduce plan costs and enhance employee health.</p>
-                      <span className={styles.connectText}>Connect with us</span>
-                    </div>
-                    <div className={styles.dropdownItemImage}>
-                      <span className={styles.offeringTitle}>Our offerings</span>
-                      <div className={styles.offeringList}>
-                        <img src="https://static.pocketpills.com/webapp/images/enterprise/lower_benefit_costs.webp" alt="Lower group benefit costs" />
-                        <span>Lower group benefit costs</span>
-                      </div>
-                      <div className={styles.offeringList}>
-                        <img src="https://static.pocketpills.com/webapp/images/enterprise/savings_calculator.webp" alt="Free savings estimate" />
-                        <span>Free savings estimate</span>
-                      </div>
-                      <a className={styles.learnMore} href="#learn-more">Learn more</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         </div>
         <div className={styles.actions}>
