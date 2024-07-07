@@ -1,0 +1,33 @@
+.SignInContainer {
+  background-image: url('../../../public/assets/hero-v5.webp');
+  background-size: 100%;
+  background-position: center top;
+  min-height: 54.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.headerSection {
+  font-family: "Exo 2", Arial, sans-serif !important;
+  .tagLine {
+    .mainLine {
+      font-size: 4rem;
+      line-height: 1.2;
+      margin-top: 3.2rem;
+      font-weight: 700;
+      text-align: center;
+      color: #4e2a84 !important;
+    }
+    .subLine {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      font-weight: 400;
+      color: #747474 !important;
+    }
+  }
+}
