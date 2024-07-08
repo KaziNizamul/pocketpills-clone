@@ -1,0 +1,91 @@
+.switchSection {
+  text-align: center;
+  font-family: 'Exo 2', Arial, sans-serif;
+  padding: 4rem 1rem;
+  background-image: url('https://static.pocketpills.com/webapp/rebrand/landing/bg-switch.png');
+
+  margin-top: 141px;
+  margin-bottom: 91px;
+
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+
+  .content {
+    background-color: #4f2a84;
+    color: #fff;
+    border-radius: 70px;
+    padding: 2rem;
+    max-width: 50%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .button {
+      background-color: #fff;
+      color: #4f2a84;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.3s ease;
+
+      font-weight: 600;
+      line-height: 1;
+      border-radius: 500px;
+
+      &:hover {
+        background: #8c60ff !important;
+        border-color: #8c60ff !important;
+        box-shadow: 0 0 12px #8c60ff80;
+        transition: all .2s ease;
+        color: #fff !important;
+      }
+
+      span {
+        font-size: 0.9rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .phone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: 2px solid #fff;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+
+      margin: 0 16rem;
+      border-radius: 2rem;
+      margin-top: 2rem;
+
+      &:hover {
+        background: #8c60ff !important;
+        border-color: #8c60ff !important;
+        box-shadow: 0 0 12px #8c60ff80;
+        transition: all .2s ease;
+        color: #fff !important;
+      }
+
+      .phoneIcon {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
