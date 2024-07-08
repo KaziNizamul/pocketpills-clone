@@ -7,6 +7,11 @@
   height: 5rem;
   display: flex;
   justify-content: center;
+  transition: transform 0.3s ease;
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
 }
 
 .container {
@@ -30,12 +35,15 @@
 
 .logo img {
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
   display: flex;
   gap: 2rem;
-  margin-left: -31rem;
+  margin-left: -29rem;
 
   .menuItem {
     position: relative;

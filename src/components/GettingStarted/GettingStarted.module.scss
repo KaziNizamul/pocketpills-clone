@@ -1,0 +1,58 @@
+.gettingStartedSection {
+  text-align: center;
+  font-family: 'Exo 2', Arial, sans-serif;
+  padding: 2rem 1rem;
+
+  h2 {
+    font-size: 2rem;
+    color: #4e2a84;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #747474;
+    margin: 0.5rem 0;
+  }
+
+  .steps {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 5rem;
+
+    .step {
+      max-width: 300px;
+      text-align: center;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      h3 {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #4e2a84;
+      }
+
+      h4 {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #333;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: #333;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .restriction {
+    font-size: 0.8rem;
+    color: #4e2a84;
+    margin-top: 2rem;
+  }
+}

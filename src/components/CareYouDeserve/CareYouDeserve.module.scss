@@ -1,0 +1,55 @@
+.careSection {
+  text-align: center;
+  font-family: 'Exo 2', Arial, sans-serif;
+  padding: 2rem 1rem;
+  background-image: url('https://static.pocketpills.com/webapp/rebrand/landing/bg-usp.webp');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center top;
+  padding-top: 18rem;
+  padding-bottom: 20rem;
+
+  h2 {
+    font-size: 2.5rem;
+    color: #4e2a84;
+    margin-bottom: 2rem;
+  }
+
+  .featuresList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+
+      .feature {
+        border-radius: 0.5rem;
+        padding: 1.5rem 7.5rem;
+        text-align: center;
+        flex: 0 1 calc(50% - 15rem);
+        box-sizing: border-box;
+
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+          color: #4e2a84;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #333;
+        }
+      }
+    }
+  }
+}

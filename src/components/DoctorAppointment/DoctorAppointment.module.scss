@@ -1,0 +1,53 @@
+.doctorAppointmentSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-image: url('https://static.pocketpills.com/webapp/rebrand/landing/bg-section-mobile.webp');
+  height: 455px;
+  background-size: 115% auto;
+  margin-top: 0;
+  margin-bottom: 75px;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  .doctor {
+    text-align: center;
+    font-family: 'Exo 2', Arial, sans-serif;
+    padding: 2rem 1rem;
+    width: 30%;
+  
+    img {
+      width: 50px;
+      height: auto;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+      color: #4e2a84;
+      margin: 1rem 0;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #2473e8;
+      margin: 0.5rem 0;
+    }
+  
+    .faxNumber {
+      color: #4e2a84;
+      font-weight: bold;
+      font-size: 1.3rem;
+      padding-top: 0.8rem;
+    }
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

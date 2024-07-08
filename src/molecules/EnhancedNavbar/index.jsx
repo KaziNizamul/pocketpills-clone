@@ -7,7 +7,6 @@ import styles from '../Navbar/Navbar.module.scss';
 // eslint-disable-next-line react-refresh/only-export-components
 const EnhancedNavbar = (props) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
-  // const [activeDropdown, setActiveDropdown] = useState('forYou');
 
   const handleMouseEnter = (menu) => {
     setActiveDropdown(menu);
@@ -15,12 +14,11 @@ const EnhancedNavbar = (props) => {
 
   const handleMouseLeave = () => {
     setActiveDropdown(null);
-    // setActiveDropdown('forYou');
   };
 
   return (
     <Navbar>
-      <div className={`${styles.container} ${props.scrolled ? styles.scrolled : ''}`}>
+      <div className={`${styles.container} ${props.scrolled ? styles.scrolled : ''} ${props.hideNavbar ? styles.hidden : ''}`}>
         <div className={styles.logo}>
           <img src="https://static.pocketpills.com/webapp/images/logo/logo-full.webp" alt="Pocketpills Logo" />
         </div>
