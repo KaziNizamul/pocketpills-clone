@@ -5,6 +5,7 @@ import CareYouDeserve from './components/CareYouDeserve';
 import News from './components/News';
 import Switch from './components/Switch';
 import styles from './App.module.scss';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <DoctorAppointment />
       <CareYouDeserve />
       <Switch />
+      <Carousel />
     </div>
   )
 }
