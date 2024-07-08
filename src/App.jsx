@@ -6,6 +6,7 @@ import News from './components/News';
 import Switch from './components/Switch';
 import styles from './App.module.scss';
 import Carousel from './components/Carousel';
+import Footer from './molecules/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <CareYouDeserve />
       <Switch />
       <Carousel />
+      <Footer />
     </div>
   )
 }

@@ -1,0 +1,134 @@
+.footer {
+  background: #f9f9f9;
+  padding: 2rem 1rem;
+  font-family: 'Exo 2', Arial, sans-serif;
+
+  box-shadow: 0 2px 100px #0000001a;
+  border-radius: 40px;
+  position: relative;
+  padding-top: 2.4rem;
+  background-color: #fff;
+
+  margin: 7%;
+  padding: 0 8%;
+
+  .navigation {
+    display: flex;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 3rem;
+    align-items: baseline;
+
+    .navColumn {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h3 {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+
+        li {
+          cursor: pointer;
+          margin-bottom: 0.5rem;
+          width: 12rem;
+          color: #4e2a84;
+
+          &:hover {
+            color: #8c60ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  .footerColumn {
+    flex: 1;
+
+    h3 {
+      font-size: 1.2rem;
+      color: #4e2a84;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    table {
+      width: 100%;
+
+      th,
+      td {
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+.contactSection {
+  padding: 2rem 0;
+  border-top: 1px solid #e0e0e0;
+
+  h3 {
+    font-size: 1.4rem;
+    color: #4e2a84;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  .pharmacyLocations {
+    display: flex;
+    justify-content: space-between;
+
+    .pharmacy {
+      flex: 1;
+      margin: 0 1rem;
+
+      h4 {
+        font-size: 1.2rem;
+        color: #4e2a84;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .accreditation {
+    margin-top: 2rem;
+
+    h4 {
+      font-size: 1.2rem;
+      color: #4e2a84;
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
