@@ -1,3 +1,17 @@
+.backgroundImage {
+  background: url(https://static.pocketpills.com/webapp/rebrand/landing/footer-pill.webp);
+  display: block;
+  position: absolute;
+  width: 336px;
+  height: 291px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  top: 0;
+  transform: translate(-4%, -25%);
+  z-index: 5;
+}
+
 .footer {
   background: #f9f9f9;
   padding: 2rem 1rem;
@@ -55,32 +69,45 @@
 
 .footerLinks {
   display: flex;
-  justify-content: space-between;
   padding: 2rem 0;
+  gap: 2rem;
 
   .footerColumn {
     flex: 1;
 
     h3 {
       font-size: 1.2rem;
-      color: #4e2a84;
+      color: #333;
       margin-bottom: 1rem;
     }
 
     ul {
       list-style: none;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      font-size: 1.2rem;
 
       li {
+        cursor: pointer;
         margin-bottom: 0.5rem;
+        width: 14rem;
+        color: #4e2a84;
+
+        &:hover {
+          color: #8c60ff;
+        }
       }
     }
 
     table {
-      width: 100%;
+      margin-left: -0.6rem;
+      width: 93%;
 
       th,
       td {
+        text-align: left;
         padding: 0.5rem;
       }
     }
@@ -88,47 +115,109 @@
 }
 
 .contactSection {
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   border-top: 1px solid #e0e0e0;
+
+  .details {
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+    .phoneDate {
+      display: flex;
+      flex-direction: column;
+      width: 24rem;
+      .date {
+        color: #333 !important;
+        font-weight: unset;
+      }
+    }
+  
+    .emailFax {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .intro {
+      margin-left: 4rem;
+      font-size: 1.1rem;
+    }
+  }
 
   h3 {
     font-size: 1.4rem;
-    color: #4e2a84;
+    color: #333;
     margin-bottom: 1rem;
   }
 
   p {
     margin: 0.5rem 0;
+    color: #4e2a84!important;
   }
 
   .pharmacyLocations {
     display: flex;
     justify-content: space-between;
+    margin-left: -1rem;
+    gap: 5rem;
 
     .pharmacy {
       flex: 1;
       margin: 0 1rem;
 
       h4 {
-        font-size: 1.2rem;
-        color: #4e2a84;
+        font-size: 1rem;
+        color: #333;
         margin-bottom: 0.5rem;
+        font-weight: 600;
+        max-width: 25ch;
+      }
+
+      .deliveringTo {
+        font-weight: 400 !important;
+        color: #747474 !important;
+      }
+
+      .address {
+        font-weight: 600;
+        padding: 1rem 0;
       }
     }
   }
 
   .accreditation {
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    gap: 7rem;
 
     h4 {
       font-size: 1.2rem;
-      color: #4e2a84;
-      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
     }
+    .memberOf, .licensedBy {
+      display: flex;
+      flex-direction: column;
+    }
+    .memberOfImg, .licensedByImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+  .bottomFooter {
+    font-size: 0.9rem !important;
+    color: #4e2a84 !important;
+    text-align: center;
+    background-color: #e6e4ff;
+
+    margin: 2rem -7.2rem;
+    padding: 0.6rem;
+    border-radius: 0 0 2rem 2rem;
   }
 }
