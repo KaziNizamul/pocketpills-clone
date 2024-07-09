@@ -15,7 +15,7 @@ const newsPhrases = {
   "Financial Post": '"Pocketpills has established itself as Canada’s leading online pharmacy"',
 };
 
-const Index = () => {
+const News = () => {
   const [selectedPhrase, setSelectedPhrase] = useState('"Pocketpills takes the hassle out of going to the pharmacy"');
   const [clickedLogos, setClickedLogos] = useState({});
 
@@ -40,4 +40,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default News;

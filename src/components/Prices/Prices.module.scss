@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://static.pocketpills.com/webapp/rebrand/landing/bg-psearch.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+  }
+  
+  .roundedContainer {
+    background-color: #e8e8ff;
+    border-radius: 65rem; /* Adjust this value for the desired shape */
+    padding: 5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    color: #4b0082; /* Purple */
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subHeader {
+    color: #333; /* Purple */
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    color: #333333; /* Black */
+    margin-bottom: 10px;
+    white-space: normal; /* Allow text to wrap */
+    max-width: 600px; /* Restrict the width to ensure wrapping */
+    margin: 0 auto; /* Center align the text */
+    line-height: 1.8; /* Add space between the lines */
+    font-family: "Exo 2", Arial, sans-serif;
+  }
+  
+  .searchInput {
+    width: 30%;
+    padding: 10px;
+    margin: 20px ;
+    border-radius: 2px;
+    border: 1px solid black;
+  }
+  
+  .popularSearches {
+    margin: 20px 0;
+    font-family: "Exo 2", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem ;
+  }
+  
+  .popularSearchesTitle {
+    color: #4b0082; 
+    display: block; /* Changed to block to ensure proper margin application */
+    margin-bottom: 10px; /* Added margin */
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Add gap between items */
+    width: 100%; /* Ensure the tags container takes the full width */
+  }
+  
+  .tags span {
+    background-color: #f7f7f7;
+    color: #4b0082;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    flex: 0 1 auto; /* Allow each tag to take its natural width */
+  }
+  
+  .note {
+    color: #333333; /* Black */
+    margin-top: 20px;
+  }
+  
+  .getStartedButton {
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 2.5rem;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Exo 2", Arial, sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .getStartedText {
+    font-size: 1.2rem;
+  }
+  
+  .getStartedSubText {
+    font-size: 0.8rem;
+  }
+  
+  .noWrap {
+    white-space: nowrap;
+  }
